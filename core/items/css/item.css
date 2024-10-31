@@ -1,0 +1,236 @@
+/**
+ * @file      items/css/item.css
+ * @brief     Stylesheet related to Item backend UI.
+ *
+ * @addtogroup PWWH_CORE_ITEM
+ * @{
+ */
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Boxes
+ *   1.1 - Submit box
+ *   1.2 - Records box
+ *   1.3 - Quick operations box
+ *   1.4 - Summary box
+ */
+
+/*===========================================================================*/
+/* 1.0 - Boxes                                                               */
+/*===========================================================================*/
+/**
+ * 1.1 - Submit box
+ */
+.post-type-pwwh_item #submitdiv .edit-post-status {
+  display: none;
+}
+
+.post-type-pwwh_item #submitdiv .edit-visibility {
+  display: none;
+}
+
+.post-type-pwwh_item #submitdiv .edit-timestamp {
+  display: none;
+}
+
+.post-type-pwwh_item #submitdiv #minor-publishing-actions {
+  display:none;
+}
+
+.post-type-pwwh_item #submitdiv .inside {
+  opacity: 0.7;
+}
+
+.post-type-pwwh_item #submitdiv #publish {
+  opacity: 0;
+  display: none;
+}
+
+/**
+ * 1.2 - Records box
+ */
+#pwwh_item_records_box .pwwh-lib-info-chunk.has-description .pwwh-lib-description {
+  min-width: 240px;
+}
+
+#pwwh_item_records_box .description {
+  font-style: italic;
+}
+
+#pwwh_item_records_box .title {
+  color: #23282d;
+  font-weight: 600;
+  font-size: 1.3em;
+  padding: 15px 0 10px;
+  display: block;
+  font-style: normal;
+}
+
+#pwwh_item_records_box .content {
+  margin-top: 20px;
+}
+
+#pwwh_item_records_box .pwwh-lib-info-chunk {
+  width: 100%;
+  color: #0073aa;
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+#pwwh_item_records_box .inside > ul {
+  margin-left: 20px;
+  list-style: initial;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+#pwwh_item_records_box .pwwh-lib-info-chunk {
+  width: 100%;
+}
+
+#pwwh_item_records_box .pwwh-avail-loc .pwwh-lib-icon {
+  height: 30px;
+  font: 400 20px/1 dashicons;
+  speak: none;
+  display: inline-block;
+  padding-top: 5px;
+  padding-right: 10px;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+  color: #82878c;
+}
+
+#pwwh_item_records_box .pwwh-info-list {
+  display: inline-block;
+  width: 50%;
+  margin: 0;
+  color: #0073aa;
+  font-size: 16px;
+  border: 1px solid #e6f7ff;
+}
+
+#pwwh_item_records_box .pwwh-info-list li {
+  margin-bottom: 0;
+}
+
+#pwwh_item_records_box .pwwh-info-list .item {
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 7px;
+  align-items: center;
+}
+
+#pwwh_item_records_box .pwwh-info-list .list-item:not(.depth-1) {
+  border-bottom: 1px solid #e6f7ff;
+  padding-left: 40px;
+}
+
+#pwwh_item_records_box .pwwh-info-list .list-item:last-child {
+  border-bottom: 0;
+}
+
+#pwwh_item_records_box .pwwh-info-list .item.depth-1 {
+  font-weight: bold;
+  background-color: #e6f7ff;
+}
+
+#pwwh_item_records_box .pwwh-info-list .item:not(.has-value) .item-value {
+  visibility: hidden;
+}
+
+/**
+ * 1.3 - Quick operations box
+ */
+#pwwh_item_quick_ops_box .inside {
+  margin-top: 20px
+}
+
+#pwwh_item_quick_ops_box .pwwh-lib-info-chunk {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#pwwh_item_quick_ops_box a {
+  font-weight: normal;
+}
+
+/**
+ * 1.4 - Summary box
+ */
+article.pwwh_item_summary_box header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+article.pwwh_item_summary_box header .thumbnail {
+  width: 250px;
+}
+
+article.pwwh_item_summary_box header .thumbnail img {
+  width: 95%;
+  overflow: hidden;
+}
+
+article.pwwh_item_summary_box header .content {
+  width: 100%;
+}
+
+article.pwwh_item_summary_box.has-thumbnail header .content {
+  width: calc(100% - 250px);
+  min-width: 300px;
+}
+
+article.pwwh_item_summary_box header .item-title {
+  font-size: 22px;
+  line-height: 1.4em;
+  display: inline-block;
+  font-weight: normal;
+}
+
+article.pwwh_item_summary_box header .item-title a {
+  font-weight: normal;
+  text-decoration: none !important;
+}
+
+article.pwwh_item_summary_box header .meta-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+article.pwwh_item_summary_box header .meta-info .pwwh-lib-info-chunk {
+  width: 100%;
+}
+
+article.pwwh_item_summary_box header .pwwh-lib-info-chunk.has-description .pwwh-lib-description {
+  min-width: 150px;
+}
+
+article.pwwh_item_summary_box header .pwwh_location .pwwh-lib-value,
+article.pwwh_item_summary_box header .pwwh_type .pwwh-lib-value {
+  font-weight: normal;
+}
+
+article.pwwh_item_summary_box header .pwwh-lib-value {
+  margin: 2px;
+}
+
+article.pwwh_item_summary_box section {
+  display: block;
+  margin: 20px 0;
+}
+
+article.pwwh_item_summary_box section .section-title {
+  display: block;
+  font-size: 22px;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+/** @} */
+

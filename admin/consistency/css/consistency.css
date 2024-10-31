@@ -1,0 +1,113 @@
+/**
+ * @file    admin/consistency/css/consistency.css
+ * @brief   Consistency checker page related CSS.
+ */
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Main page
+ */
+
+/**
+ * 1.0 - Main page
+ */
+#pwwh_concistency_checker .pwwh-lib-flexbox {
+  width: calc(100%/3 - 22px);
+}
+
+#pwwh_concistency_checker .pwwh_consistency_checker-details .pwwh-lib-flexbox {
+  width: calc(100% - 12px);
+}
+
+#pwwh_concistency_checker .pwwh-content {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pwwh_concistency_checker .pwwh-content .pwwh-lib-info-chunk {
+
+  width: 100%;
+}
+
+#pwwh_concistency_checker .pwwh-footer {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#pwwh_concistency_checker .pwwh-footer .pwwh-consistency-more {
+  font-weight: 600px;
+  line-height: 1.4;
+  font-size: 1.0em;
+  display: inline-flex;
+}
+
+#pwwh_concistency_checker .pwwh-footer .pwwh-consistency-result {
+  text-transform: uppercase;
+  margin-right: 10px;
+  width: initial;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+
+#pwwh_concistency_checker .pwwh-footer .pwwh-consistency-result.pwwh-success {
+  color: #43A047;
+}
+
+#pwwh_concistency_checker .pwwh-footer .pwwh-consistency-result.pwwh-success .pwwh-lib-icon {
+  color: #43A047;
+}
+
+#pwwh_concistency_checker .pwwh-footer .pwwh-consistency-result.pwwh-fail {
+  color: #B71C1C;
+}
+
+#pwwh_concistency_checker .pwwh-footer .pwwh-consistency-result.pwwh-fail .pwwh-lib-icon {
+  color: #B71C1C;
+}
+
+@media only screen and (max-width: 1440px) {
+  #pwwh_concistency_checker .pwwh-lib-flexbox {
+    width: calc(100%/2 - 22px);
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  #pwwh_concistency_checker .pwwh-lib-flexbox {
+    width: 100%;
+  }
+}
+
+/**
+ * 1.0 - Item page
+ */
+
+#pwwh_concistency_checker .pwwh_consistency_item_page {
+  width: 100%;
+}
+
+#pwwh_concistency_checker .pwwh_consistency_item_page .pwwh-lib-flexbox {
+  width: 100%;
+}
+
+#pwwh_concistency_checker .pwwh_consistency_item_page .pwwh-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+#pwwh_concistency_checker .pwwh_consistency_item_page .pwwh-footer .pwwh-amount-avail {
+  display: flex;
+  flex-direction: column;
+}
+
+#pwwh_concistency_checker .pwwh_consistency_item_page .pwwh-footer .pwwh-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

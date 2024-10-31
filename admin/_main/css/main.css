@@ -1,0 +1,41 @@
+/**
+ * @file    admin/_main/css/main.css
+ * @brief   Main page related CSS.
+ */
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - General
+ */
+
+/**
+ * 1.0 - General
+ */
+.pwwh_admin_page .pwwh-lib-flexbox .pwwh-lib-inner,
+.pwwh_more_page .pwwh-lib-flexbox .pwwh-lib-inner {
+  height: calc(100% - 47px);
+}
+
+.pwwh_admin_page .pwwh-lib-flexbox .pwwh-lib-inner .description,
+.pwwh_more_page .pwwh-lib-flexbox .pwwh-lib-inner .description {
+  min-height: 70px;margin-bottom: 10px;
+}
+
+.pwwh_admin_page .pwwh-lib-flexbox .pwwh-lib-inner .actions,
+.pwwh_more_page .pwwh-lib-flexbox .pwwh-lib-inner .actions {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.pwwh_admin_page .pwwh-lib-info-chunk .pwwh-lib-value,
+.pwwh_more_page .pwwh-lib-info-chunk .pwwh-lib-value {
+  font-weight: normal;
+}
+
+.pwwh_admin_page .pwwh-lib-info-chunk .pwwh-lib-value a,
+.pwwh_more_page .pwwh-lib-info-chunk .pwwh-lib-value a {
+  text-decoration: none;
+}

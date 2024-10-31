@@ -1,0 +1,181 @@
+/**
+ * @file      purchases/css/purchase.css
+ * @brief     Stylesheet related to Purchase backend UI.
+ *
+ * @addtogroup PWWH_CORE_PURCHASE
+ * @{
+ */
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - Boxes
+ *   1.1 - Submit box
+ *   1.2 - Item summary box
+ *   1.3 - Purchase add item box
+ */
+
+/*===========================================================================*/
+/* 1.0 - Boxes                                                               */
+/*===========================================================================*/
+/**
+ * 1.1 - Submit box
+ */
+.post-type-pwwh_purchase #submitdiv .edit-post-status {
+  display: none;
+}
+
+.post-type-pwwh_purchase #submitdiv .edit-visibility {
+  display: none;
+}
+
+.post-type-pwwh_purchase #submitdiv .edit-timestamp {
+  display: none;
+}
+
+.post-type-pwwh_purchase #submitdiv #minor-publishing-actions {
+  display:none;
+}
+
+.post-type-pwwh_purchase #submitdiv .inside {
+  opacity: 0.7;
+}
+
+.post-type-pwwh_purchase #submitdiv #publish {
+  opacity: 0;
+  display: none;
+}
+
+/**
+ * 1.2 - Item summary box
+ */
+#pwwh_purchase_item_summary_box {
+  position: relative;
+}
+
+#pwwh_purchase_item_summary_box #pwwh-remove {
+  position:absolute;
+  top: 3px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+#pwwh_purchase_item_summary_box .pwwh-lib-icon {
+  color: #82878c;
+}
+
+#pwwh_purchase_item_summary_box #pwwh-remove:focus .pwwh-lib-icon,
+#pwwh_purchase_item_summary_box #pwwh-remove:hover .pwwh-lib-icon {
+  color: #b33535;
+}
+
+#pwwh_purchase_item_summary_box #pwwh-qnt-edit {
+  border: none;
+  background: transparent;
+  text-decoration: underline;
+  min-width: initial;
+  margin-left: 20px;
+  line-height: initial;
+  height: initial;
+  padding: 0;
+  margin-top: -5px;
+  font-weight: 700;
+}
+
+#pwwh_purchase_item_summary_box #pwwh-qnt-edit:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+
+#pwwh_purchase_item_summary_box #pwwh-qnt-edit:not(.disabled):hover {
+  color: #00a0d2;
+}
+
+#pwwh_purchase_item_summary_box  #pwwh-qnt-editarea {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+#pwwh_purchase_item_summary_box .pwwh-qnt-note {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+}
+
+#pwwh_purchase_item_summary_box #pwwh-qnt-input input {
+  font-size: 1.1em;
+  height: 30px;
+  width: 80px;
+}
+
+#pwwh_purchase_item_summary_box #pwwh-qnt-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+#pwwh_purchase_item_summary_box #pwwh-qnt-buttons button {
+  margin-right: 20px;
+  min-width: 80px;
+}
+
+#pwwh_purchase_item_summary_box .status-trash {
+  opacity: 0.4;
+}
+
+#pwwh_purchase_item_summary_box .purchase-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+/**
+ * 1.3 - Purchase add item box
+ */
+#pwwh_purchase_add_item_box .pwwh-description{
+  font-style: italic;
+  margin: 15px 0 5px;
+  display: block;
+}
+
+#pwwh_purchase_add_item_box .pwwh-lib-input {
+  margin-top: 10px;
+}
+
+#pwwh_purchase_add_item_box .additional {
+  margin-top: 30px;
+  padding-top: 10px;
+  display: block;
+  border-top: 1px solid #eee;
+  width: 100%;
+  position: relative;
+}
+
+#pwwh_purchase_add_item_box .additional #pwwh-remove {
+  position:absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+
+#pwwh_purchase_add_item_box .additional #pwwh-remove .pwwh-lib-icon {
+  color: #82878c;
+}
+
+#pwwh_purchase_add_item_box .additional #pwwh-remove:focus .pwwh-lib-icon,
+#pwwh_purchase_add_item_box .additional #pwwh-remove:hover .pwwh-lib-icon {
+  color: #b33535;
+}
+
+#pwwh_purchase_add_item_box .pwwh-footer {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}

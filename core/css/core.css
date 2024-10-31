@@ -1,0 +1,71 @@
+/*
+Plugin Name: Piwi Warehouse
+Author: Marisa Monaco
+Author URI: http: //www.piwi.graphics
+Description: Custom style for common code
+*/
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - General
+ */
+
+/**
+ * 1.0 - General
+ */
+#poststuff #titlediv .pwwh-core-title {
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+#poststuff #titlediv .pwwh-core-title h1 {
+  padding: 8px 12px;
+  margin: 0;
+  line-height: 1.4;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+#poststuff .pwwh-note .pwwh-lib-description {
+  min-width: initial;
+}
+
+#poststuff .pwwh-note .pwwh-lib-value {
+  font-weight: normal;
+}
+
+.pwwh-lib-button.pwwh-primary {
+  background: #0085ba;
+  border-color: #0073aa #006799 #006799;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
+
+.pwwh-lib-button.pwwh-primary:focus,
+.pwwh-lib-button.pwwh-primary:hover {
+  background: #008ec2;
+  border-color: #006799;
+  color: #fff;
+}
+
+.pwwh-page-description {
+  background-color: white;
+  display: block;
+  padding: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  width: calc(100% - 62px);
+  border: 1px solid #e5e5e5;
+}
+
+@media only screen and (max-width: 780px) {
+  .pwwh-page-description {
+    margin-right: 10px;
+    width: calc(100% - 50px);
+  }
+}

@@ -1,0 +1,190 @@
+/**
+ * @file    admin/cap/css/cap.css
+ * @brief   Capability page related CSS.
+ */
+
+/**
+ * Table of Contents
+ *
+ * 1.0 - General
+ * 2.0 - Capability
+ *   2.1 - Color management
+ * 3.0 - Media queries
+ */
+
+/**
+ * 1.0 - General
+ */
+#pwwh_capabilities .pwwh-lib-title {
+  font-size: 1.3em;
+}
+
+#pwwh_capabilities .pwwh-lib-flexbox.widebox {
+  width: calc(100% - 22px);
+  margin-right: 20px;
+}
+
+#pwwh_capabilities button.pwwh-restore {
+  margin-left: 20px;
+}
+
+/**
+ * 2.0 - Groups
+ */
+#pwwh_capabilities .pwwh-lib-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#pwwh_capabilities .pwwh-lib-main .group {
+  margin: 0 20px 20px;
+  width: calc(100%/3 - 40px);
+}
+
+#pwwh_capabilities .pwwh-lib-main .group:last-child {
+  margin-bottom: 0;
+}
+
+#pwwh_capabilities .pwwh-lib-main .group-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: block;
+  font-weight: 600;
+}
+
+#pwwh_capabilities li:not(.depth-1) {
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+  padding-left: 14px;
+  border-left: 2px solid #008ec2;
+}
+
+#pwwh_capabilities li:not(.depth-1).readonly {
+  border-left-color: #ccc;
+}
+
+/**
+ * 2.0 - Capability
+ */
+#pwwh_capabilities .pwwh-capability-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 5px 0;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 10px;
+  font-size: 1.1em;
+  color: #444;
+  text-align: left;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap .description .pwwh-lib-text {
+  visibility: hidden;
+  width: 170px;
+  background-color: #23282d;
+  border-radius: 2px;
+  opacity: 0;
+  color: white;
+  padding: 5px 15px;
+  text-align: justify;
+  position: absolute;
+  left: 20px;
+  top: 15px;
+  z-index: 1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap .description  {
+  margin-bottom: 0;
+  margin-left: 10px;
+  position: relative;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap .description .pwwh-lib-text:after {
+  content: '';
+}
+
+#pwwh_capabilities .pwwh-capability-wrap:not(.readonly) .description  {
+  cursor: help;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap:not(.readonly) .description:hover .pwwh-lib-icon {
+  color:#008ec2;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap:not(.readonly) .description:hover .pwwh-lib-text {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap.readonly {
+  opacity: 0.2;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap.readonly .pwwh-lib-switch-slider {
+  cursor: default;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap .pwwh-lib-info-chunk.has-description .pwwh-lib-description {
+ min-width: initial;
+}
+
+/**
+ * 2.1 - Color management
+ */
+#ppwh_capabilities {
+  color:red;
+}
+
+#pwwh_capabilities .depth-1 > .pwwh-capability-wrap .pwwh-lib-switch-input:checked + .pwwh-lib-switch-slider {
+  background-color: #c20000;
+}
+
+#pwwh_capabilities .depth-2 > .pwwh-capability-wrap .pwwh-lib-switch-input:checked + .pwwh-lib-switch-slider {
+  background-color: #008ec2;
+}
+
+#pwwh_capabilities .pwwh-capability-wrap .pwwh-lib-switch-input:checked + .pwwh-lib-switch-slider {
+  background-color: #82878c;
+}
+
+/**
+ * 3.0 - Media queries
+ */
+@media only screen and (max-width: 1400px) {
+  #pwwh_capabilities .pwwh-lib-flexbox.widebox .group {
+    margin: 0 10px 20px;
+    width: calc(100%/2 - 20px);
+    min-height: 250px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  #pwwh_capabilities .pwwh-lib-flexbox.widebox {
+    width: calc(100% - 10px);
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  #pwwh_capabilities .pwwh-lib-flexbox.widebox .group {
+    margin: 0 10px 20px;
+    width: calc(100% - 20px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  #pwwh_capabilities .label {
+    max-width: calc(100% - 70px);
+  }
+}
